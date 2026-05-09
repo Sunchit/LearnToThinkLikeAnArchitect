@@ -61,17 +61,17 @@ Each problem in this section is drawn from real-world incidents, postmortems, an
 
 Every problem is presented as an architect would encounter it — with a story, a wrong approach, a correct approach, and the reasoning that connects them.
 
-| # | Problem | Core Concept |
-|---|---------|--------------|
-| P01 | Google Docs Real-Time Collaboration | OT vs CRDT, selective undo, WebSocket infrastructure |
-| P02 | Netflix Chaos Monkey | Chaos engineering, resilience testing, steady-state hypothesis |
-| P03 | Amazon Black Friday Connection Pool Meltdown | HikariCP, `(cores×2)+1`, PgBouncer, load testing |
-| P04 | The Kafka OOM Crash That Charged 1000 Customers Twice | At-least-once delivery, idempotency, offset commits |
-| P05 | The Idempotency Key That Lied | Two-phase PENDING/COMPLETED, Redis SETNX flaw, partial failures |
-| P06 | One Request. A Thousand Logs. Zero Answers. | Distributed tracing, TraceId/SpanId, OpenTelemetry, Jaeger |
-| P07 | The Flash Sale That Took Down the Database | Rate limiting, queue-based load levelling, inventory reservation |
-| P08 | The Notification Storm | Fan-out on write vs read, priority queues, delivery guarantees |
-| _more coming_ | | |
+| # | Problem | Core Concept | Link |
+|---|---------|--------------|------|
+| P01 | Google Docs Real-Time Collaboration | OT vs CRDT, selective undo, WebSocket infrastructure | [Read](./P01_Operational_Transformation_Google_Docs.md) |
+| P02 | Netflix Chaos Monkey | Chaos engineering, resilience testing, steady-state hypothesis | _coming soon_ |
+| P03 | Amazon Black Friday Connection Pool Meltdown | HikariCP, `(cores×2)+1`, PgBouncer, load testing | _coming soon_ |
+| P04 | The Kafka OOM Crash That Charged 1000 Customers Twice | At-least-once delivery, idempotency, offset commits | _coming soon_ |
+| P05 | The Idempotency Key That Lied | Two-phase PENDING/COMPLETED, Redis SETNX flaw, partial failures | _coming soon_ |
+| P06 | One Request. A Thousand Logs. Zero Answers. | Distributed tracing, TraceId/SpanId, OpenTelemetry, Jaeger | _coming soon_ |
+| P07 | The Flash Sale That Took Down the Database | Rate limiting, queue-based load levelling, inventory reservation | _coming soon_ |
+| P08 | The Notification Storm | Fan-out on write vs read, priority queues, delivery guarantees | _coming soon_ |
+| _more coming_ | | | |
 
 ---
 
