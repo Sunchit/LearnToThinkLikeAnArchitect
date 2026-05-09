@@ -142,6 +142,9 @@ Open an issue or a pull request. The best learning comes from real stories — a
 Engineering Leader · System Design Educator  
 Building this series to give every developer the foundation that took most architects years of incidents to develop.
 
+📺 [YouTube — CodeWithSunchitDudeja](https://www.youtube.com/@CodeWithSunchitDudeja)  
+📸 [Instagram — @sunchitdudeja](https://www.instagram.com/sunchitdudeja/)
+
 ---
 
 > *"A developer makes the code work. An architect makes the system last."*
