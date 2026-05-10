@@ -1,0 +1,533 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+
+    {
+      "id": "title", "type": "text",
+      "x": 30, "y": 10, "width": 1060, "height": 28,
+      "text": "Chaos Kong — Full AWS Region Failure: What Netflix Found",
+      "fontSize": 21, "fontFamily": 1,
+      "strokeColor": "#cdd6f4", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 100, "version": 1, "versionNonce": 100,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Chaos Kong — Full AWS Region Failure: What Netflix Found",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "subtitle", "type": "text",
+      "x": 30, "y": 42, "width": 1060, "height": 16,
+      "text": "Kong takes us-east-1 offline. Traffic reroutes to us-west-2. Three bugs surface that 11 months of testing never caught.",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#a6adc8", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 101, "version": 1, "versionNonce": 101,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Kong takes us-east-1 offline. Traffic reroutes to us-west-2. Three bugs surface that 11 months of testing never caught.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "users-rect", "type": "rectangle",
+      "x": 438, "y": 65, "width": 244, "height": 52,
+      "strokeColor": "#4a7a9a", "backgroundColor": "#07111e",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 200, "version": 1, "versionNonce": 200,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "users-text", "type": "text",
+      "x": 438, "y": 72, "width": 244, "height": 38,
+      "text": "👥  Global User Traffic\n150M+ Netflix subscribers",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#89dceb", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 201, "version": 1, "versionNonce": 201,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "👥  Global User Traffic\n150M+ Netflix subscribers",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "arrow-users-lb", "type": "arrow",
+      "x": 560, "y": 117, "width": 1, "height": 32,
+      "strokeColor": "#4a7a9a", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 300, "version": 1, "versionNonce": 300,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "points": [[0, 0], [0, 32]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+
+    {
+      "id": "lb-rect", "type": "rectangle",
+      "x": 368, "y": 149, "width": 384, "height": 58,
+      "strokeColor": "#5588cc", "backgroundColor": "#080e20",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 400, "version": 1, "versionNonce": 400,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "lb-text", "type": "text",
+      "x": 368, "y": 156, "width": 384, "height": 42,
+      "text": "🌐  Route 53 / Global Load Balancer\nus-east-1 health check FAILED → redirecting all traffic",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#74b9ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 401, "version": 1, "versionNonce": 401,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "🌐  Route 53 / Global Load Balancer\nus-east-1 health check FAILED → redirecting all traffic",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "arrow-lb-east1", "type": "arrow",
+      "x": 200, "y": 178, "width": 168, "height": 52,
+      "strokeColor": "#882222", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 70,
+      "seed": 500, "version": 1, "versionNonce": 500,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "strokeStyle": "dashed",
+      "points": [[168, 0], [0, 52]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "blocked-label", "type": "text",
+      "x": 222, "y": 185, "width": 100, "height": 16,
+      "text": "✕  BLOCKED",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#ff4444", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 501, "version": 1, "versionNonce": 501,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "✕  BLOCKED",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "arrow-lb-west2", "type": "arrow",
+      "x": 752, "y": 177, "width": 148, "height": 52,
+      "strokeColor": "#44cc66", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 3, "roughness": 0, "opacity": 100,
+      "seed": 510, "version": 1, "versionNonce": 510,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "points": [[0, 0], [148, 52]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "redirect-label", "type": "text",
+      "x": 758, "y": 185, "width": 130, "height": 28,
+      "text": "↳ REDIRECTING\n  all traffic",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#44cc66", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 511, "version": 1, "versionNonce": 511,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "↳ REDIRECTING\n  all traffic",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "east1-rect", "type": "rectangle",
+      "x": 30, "y": 226, "width": 380, "height": 290,
+      "strokeColor": "#cc2222", "backgroundColor": "#140606",
+      "fillStyle": "solid", "strokeWidth": 3, "roughness": 0, "opacity": 100,
+      "seed": 600, "version": 1, "versionNonce": 600,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "east1-region-label", "type": "text",
+      "x": 30, "y": 232, "width": 380, "height": 16,
+      "text": "AWS  us-east-1  (N. Virginia)",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#ff6666", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 601, "version": 1, "versionNonce": 601,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "AWS  us-east-1  (N. Virginia)",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "kong-banner-rect", "type": "rectangle",
+      "x": 55, "y": 254, "width": 330, "height": 110,
+      "strokeColor": "#ff2222", "backgroundColor": "#200808",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 610, "version": 1, "versionNonce": 610,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "kong-banner-text", "type": "text",
+      "x": 55, "y": 262, "width": 330, "height": 96,
+      "text": "🦁  CHAOS KONG\n─────────────────────\nREGION  OFFLINE\nAll health checks failing\nNo traffic being served",
+      "fontSize": 16, "fontFamily": 1,
+      "strokeColor": "#ff3333", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 611, "version": 1, "versionNonce": 611,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "🦁  CHAOS KONG\n─────────────────────\nREGION  OFFLINE\nAll health checks failing\nNo traffic being served",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "east1-dead-services", "type": "text",
+      "x": 55, "y": 375, "width": 330, "height": 130,
+      "text": "✕  Zuul API Gateway         [DEAD]\n✕  Billing Service             [DEAD]\n✕  Video Streaming Svc    [DEAD]\n✕  CDN Origin Server        [DEAD]\n✕  Primary Database         [DEAD]\n✕  Redis Cluster               [DEAD]",
+      "fontSize": 12, "fontFamily": 3,
+      "strokeColor": "#884444", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 612, "version": 1, "versionNonce": 612,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "✕  Zuul API Gateway         [DEAD]\n✕  Billing Service             [DEAD]\n✕  Video Streaming Svc    [DEAD]\n✕  CDN Origin Server        [DEAD]\n✕  Primary Database         [DEAD]\n✕  Redis Cluster               [DEAD]",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "west2-rect", "type": "rectangle",
+      "x": 680, "y": 226, "width": 410, "height": 290,
+      "strokeColor": "#2266cc", "backgroundColor": "#04080e",
+      "fillStyle": "solid", "strokeWidth": 3, "roughness": 0, "opacity": 100,
+      "seed": 700, "version": 1, "versionNonce": 700,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "west2-region-label", "type": "text",
+      "x": 680, "y": 232, "width": 410, "height": 16,
+      "text": "AWS  us-west-2  (Oregon)  —  ACTIVE  ⚡",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#74b9ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 701, "version": 1, "versionNonce": 701,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "AWS  us-west-2  (Oregon)  —  ACTIVE  ⚡",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "bug1-rect", "type": "rectangle",
+      "x": 692, "y": 252, "width": 386, "height": 72,
+      "strokeColor": "#aa55ff", "backgroundColor": "#0e0618",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 710, "version": 1, "versionNonce": 710,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "bug1-badge", "type": "text",
+      "x": 698, "y": 256, "width": 60, "height": 16,
+      "text": "BUG  1",
+      "fontSize": 10, "fontFamily": 1,
+      "strokeColor": "#cc88ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 711, "version": 1, "versionNonce": 711,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "BUG  1",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "bug1-text", "type": "text",
+      "x": 698, "y": 270, "width": 374, "height": 48,
+      "text": "⚠  Zuul API Gateway — Stale Routing Config\nRegion-specific routing rules were never replicated\nto us-west-2. Wrong service endpoints served.",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#cc88ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 712, "version": 1, "versionNonce": 712,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "⚠  Zuul API Gateway — Stale Routing Config\nRegion-specific routing rules were never replicated\nto us-west-2. Wrong service endpoints served.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "bug2-rect", "type": "rectangle",
+      "x": 692, "y": 332, "width": 386, "height": 72,
+      "strokeColor": "#ff9944", "backgroundColor": "#180e04",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 720, "version": 1, "versionNonce": 720,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "bug2-badge", "type": "text",
+      "x": 698, "y": 336, "width": 60, "height": 16,
+      "text": "BUG  2",
+      "fontSize": 10, "fontFamily": 1,
+      "strokeColor": "#ffbb66", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 721, "version": 1, "versionNonce": 721,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "BUG  2",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "bug2-text", "type": "text",
+      "x": 698, "y": 350, "width": 374, "height": 48,
+      "text": "⚠  Billing Service — Missing DB Migration\nDatabase schema migration had never been run in\nus-west-2. Watch history silently stopped recording.",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#ffbb66", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 722, "version": 1, "versionNonce": 722,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "⚠  Billing Service — Missing DB Migration\nDatabase schema migration had never been run in\nus-west-2. Watch history silently stopped recording.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "bug3-rect", "type": "rectangle",
+      "x": 692, "y": 412, "width": 386, "height": 72,
+      "strokeColor": "#ffdd00", "backgroundColor": "#181200",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 730, "version": 1, "versionNonce": 730,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "bug3-badge", "type": "text",
+      "x": 698, "y": 416, "width": 60, "height": 16,
+      "text": "BUG  3",
+      "fontSize": 10, "fontFamily": 1,
+      "strokeColor": "#ffee44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 731, "version": 1, "versionNonce": 731,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "BUG  3",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "bug3-text", "type": "text",
+      "x": 698, "y": 430, "width": 374, "height": 48,
+      "text": "⚠  CDN Origin Config — Points to Dead Region\nCDN fallback origin was hardcoded to us-east-1.\nVideo stream requests loop back to the dead region.",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#ffee44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 732, "version": 1, "versionNonce": 732,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "⚠  CDN Origin Config — Points to Dead Region\nCDN fallback origin was hardcoded to us-east-1.\nVideo stream requests loop back to the dead region.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "cdn-loop-arrow", "type": "arrow",
+      "x": 220, "y": 484, "width": 665, "height": 56,
+      "strokeColor": "#ff6600", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 90,
+      "seed": 800, "version": 1, "versionNonce": 800,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "strokeStyle": "dashed",
+      "points": [[665, 0], [665, 56], [0, 56], [0, 32]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "cdn-loop-label-rect", "type": "rectangle",
+      "x": 360, "y": 526, "width": 420, "height": 26,
+      "strokeColor": "#664400", "backgroundColor": "#100800",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 801, "version": 1, "versionNonce": 801,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "cdn-loop-label", "type": "text",
+      "x": 360, "y": 531, "width": 420, "height": 16,
+      "text": "📡  CDN origin fallback  →  us-east-1  ←  DEAD!  Infinite routing loop",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#ff8833", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 802, "version": 1, "versionNonce": 802,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "📡  CDN origin fallback  →  us-east-1  ←  DEAD!  Infinite routing loop",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "bug1-exp-rect", "type": "rectangle",
+      "x": 30, "y": 566, "width": 330, "height": 140,
+      "strokeColor": "#aa55ff", "backgroundColor": "#080414",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 900, "version": 1, "versionNonce": 900,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "bug1-exp-text", "type": "text",
+      "x": 40, "y": 573, "width": 310, "height": 126,
+      "text": "BUG 1 — Zuul Stale Config\n──────────────────────────\nRoot cause:\nRouting rules stored per-region in\na config file, not replicated by\nthe deployment pipeline.\n\nFix: Config stored in a central\nconsul/etcd cluster with cross-\nregion replication. Verified in\neach region on every deploy.",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#cc88ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 901, "version": 1, "versionNonce": 901,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "BUG 1 — Zuul Stale Config\n──────────────────────────\nRoot cause:\nRouting rules stored per-region in\na config file, not replicated by\nthe deployment pipeline.\n\nFix: Config stored in a central\nconsul/etcd cluster with cross-\nregion replication. Verified in\neach region on every deploy.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "bug2-exp-rect", "type": "rectangle",
+      "x": 380, "y": 566, "width": 330, "height": 140,
+      "strokeColor": "#ff9944", "backgroundColor": "#100802",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 910, "version": 1, "versionNonce": 910,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "bug2-exp-text", "type": "text",
+      "x": 390, "y": 573, "width": 310, "height": 126,
+      "text": "BUG 2 — Silent Billing Failure\n──────────────────────────\nRoot cause:\nDB migration script only ran in\nus-east-1. us-west-2 schema was\n3 versions behind. Writes failed\nsilently — no error, no alert.\n\nFix: Migrations tracked in a\nshared migration table, verified\nacross all regions before traffic\nis shifted to them.",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#ffbb66", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 911, "version": 1, "versionNonce": 911,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "BUG 2 — Silent Billing Failure\n──────────────────────────\nRoot cause:\nDB migration script only ran in\nus-east-1. us-west-2 schema was\n3 versions behind. Writes failed\nsilently — no error, no alert.\n\nFix: Migrations tracked in a\nshared migration table, verified\nacross all regions before traffic\nis shifted to them.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "bug3-exp-rect", "type": "rectangle",
+      "x": 730, "y": 566, "width": 360, "height": 140,
+      "strokeColor": "#ffdd00", "backgroundColor": "#100e00",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 920, "version": 1, "versionNonce": 920,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "bug3-exp-text", "type": "text",
+      "x": 740, "y": 573, "width": 340, "height": 126,
+      "text": "BUG 3 — CDN Routing Loop\n──────────────────────────\nRoot cause:\nCDN edge nodes had origin\nfallback hardcoded to us-east-1\nIP. When east-1 went down, every\nvideo request looped back to a\ndead endpoint — zero playback.\n\nFix: CDN origin config uses a\nGlobal Accelerator anycast address\nthat routes to the nearest healthy\nregion automatically.",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#ffee66", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 921, "version": 1, "versionNonce": 921,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "BUG 3 — CDN Routing Loop\n──────────────────────────\nRoot cause:\nCDN edge nodes had origin\nfallback hardcoded to us-east-1\nIP. When east-1 went down, every\nvideo request looped back to a\ndead endpoint — zero playback.\n\nFix: CDN origin config uses a\nGlobal Accelerator anycast address\nthat routes to the nearest healthy\nregion automatically.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "lesson-rect", "type": "rectangle",
+      "x": 30, "y": 720, "width": 1060, "height": 72,
+      "strokeColor": "#334455", "backgroundColor": "#04080c",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 1000, "version": 1, "versionNonce": 1000,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "lesson-title", "type": "text",
+      "x": 30, "y": 727, "width": 1060, "height": 16,
+      "text": "🧠  The Architect's Lesson",
+      "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#74b9ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 1001, "version": 1, "versionNonce": 1001,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "🧠  The Architect's Lesson",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "lesson-text", "type": "text",
+      "x": 30, "y": 747, "width": 1060, "height": 38,
+      "text": "A secondary region that has never served real production traffic is not a backup — it is an untested hope.\nEvery bug Chaos Kong found existed for months. None appeared in staging. All appeared the moment real traffic hit a region it had never served before.",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#a6adc8", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 1002, "version": 1, "versionNonce": 1002,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "A secondary region that has never served real production traffic is not a backup — it is an untested hope.\nEvery bug Chaos Kong found existed for months. None appeared in staging. All appeared the moment real traffic hit a region it had never served before.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "footer", "type": "text",
+      "x": 30, "y": 802, "width": 1060, "height": 14,
+      "text": "P02 · Learn to Think Like an Architect  ·  Chaos Kong — Region Failure  ·  youtube.com/@CodeWithSunchitDudeja  ·  instagram.com/sunchitdudeja",
+      "fontSize": 10, "fontFamily": 1,
+      "strokeColor": "#44446a", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 1100, "version": 1, "versionNonce": 1100,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "P02 · Learn to Think Like an Architect  ·  Chaos Kong — Region Failure  ·  youtube.com/@CodeWithSunchitDudeja  ·  instagram.com/sunchitdudeja",
+      "angle": 0, "groupIds": []
+    }
+
+  ],
+  "appState": {
+    "theme": "dark",
+    "viewBackgroundColor": "#000000",
+    "gridSize": null,
+    "zoom": { "value": 1 }
+  }
+}
