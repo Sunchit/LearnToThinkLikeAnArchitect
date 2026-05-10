@@ -1,0 +1,529 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+
+    {
+      "id": "title", "type": "text",
+      "x": 30, "y": 10, "width": 1060, "height": 28,
+      "text": "Operational Transformation (OT) — How Google Docs Merges Concurrent Edits",
+      "fontSize": 20, "fontFamily": 1,
+      "strokeColor": "#cdd6f4", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 100, "version": 1, "versionNonce": 100,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Operational Transformation (OT) — How Google Docs Merges Concurrent Edits",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "subtitle", "type": "text",
+      "x": 30, "y": 42, "width": 1060, "height": 16,
+      "text": "Two users edit \"abc\" at the same time. OT transforms operations so both intentions are preserved and all clients converge.",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#a6adc8", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 101, "version": 1, "versionNonce": 101,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Two users edit \"abc\" at the same time. OT transforms operations so both intentions are preserved and all clients converge.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "init-rect", "type": "rectangle",
+      "x": 370, "y": 68, "width": 320, "height": 88,
+      "strokeColor": "#5a5a8a", "backgroundColor": "#0e0e1e",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 200, "version": 1, "versionNonce": 200,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "init-label", "type": "text",
+      "x": 370, "y": 74, "width": 320, "height": 16,
+      "text": "Initial Document",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#a6adc8", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 201, "version": 1, "versionNonce": 201,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Initial Document",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "init-chars", "type": "text",
+      "x": 370, "y": 94, "width": 320, "height": 54,
+      "text": "\"  a     b     c  \"\n   0     1     2\n       positions",
+      "fontSize": 16, "fontFamily": 3,
+      "strokeColor": "#cdd6f4", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 202, "version": 1, "versionNonce": 202,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "\"  a     b     c  \"\n   0     1     2\n       positions",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "arrow-to-alice", "type": "arrow",
+      "x": 200, "y": 156, "width": 370, "height": 52,
+      "strokeColor": "#4a9aff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 80,
+      "seed": 300, "version": 1, "versionNonce": 300,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "points": [[370, 0], [0, 52]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "arrow-to-bob", "type": "arrow",
+      "x": 530, "y": 156, "width": 370, "height": 52,
+      "strokeColor": "#ff9a4a", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 80,
+      "seed": 301, "version": 1, "versionNonce": 301,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "points": [[0, 0], [370, 52]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+
+    {
+      "id": "alice-rect", "type": "rectangle",
+      "x": 30, "y": 208, "width": 260, "height": 90,
+      "strokeColor": "#4a9aff", "backgroundColor": "#061428",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 400, "version": 1, "versionNonce": 400,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "alice-text", "type": "text",
+      "x": 40, "y": 216, "width": 240, "height": 74,
+      "text": "👩 Alice\nInsert 'X' at position 1\n\n\"abc\" → \"aXbc\"\n(between a and b)",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#74b9ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 401, "version": 1, "versionNonce": 401,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "👩 Alice\nInsert 'X' at position 1\n\n\"abc\" → \"aXbc\"\n(between a and b)",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "bob-rect", "type": "rectangle",
+      "x": 810, "y": 208, "width": 260, "height": 90,
+      "strokeColor": "#ff9a4a", "backgroundColor": "#1e0e04",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 410, "version": 1, "versionNonce": 410,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "bob-text", "type": "text",
+      "x": 820, "y": 216, "width": 240, "height": 74,
+      "text": "👨 Bob\nInsert 'Y' at position 2\n\n\"abc\" → \"abYc\"\n(between b and c)",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#ffb86c", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 411, "version": 1, "versionNonce": 411,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "👨 Bob\nInsert 'Y' at position 2\n\n\"abc\" → \"abYc\"\n(between b and c)",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "server-arrow-l", "type": "arrow",
+      "x": 160, "y": 298, "width": 0, "height": 42,
+      "strokeColor": "#555577", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 70,
+      "seed": 500, "version": 1, "versionNonce": 500,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "points": [[0, 0], [0, 42]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "strokeStyle": "dashed"
+    },
+    {
+      "id": "server-arrow-r", "type": "arrow",
+      "x": 940, "y": 298, "width": 0, "height": 42,
+      "strokeColor": "#555577", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 70,
+      "seed": 501, "version": 1, "versionNonce": 501,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "points": [[0, 0], [0, 42]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "strokeStyle": "dashed"
+    },
+    {
+      "id": "server-label-rect", "type": "rectangle",
+      "x": 300, "y": 308, "width": 500, "height": 32,
+      "strokeColor": "#333355", "backgroundColor": "#08080f",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 502, "version": 1, "versionNonce": 502,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "server-label", "type": "text",
+      "x": 300, "y": 316, "width": 500, "height": 16,
+      "text": "⚡  Both operations arrive at the server simultaneously",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#6a6aaa", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 503, "version": 1, "versionNonce": 503,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "⚡  Both operations arrive at the server simultaneously",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "step1-shared-rect", "type": "rectangle",
+      "x": 180, "y": 356, "width": 740, "height": 58,
+      "strokeColor": "#444466", "backgroundColor": "#0a0a18",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 600, "version": 1, "versionNonce": 600,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "step1-shared-text", "type": "text",
+      "x": 180, "y": 363, "width": 740, "height": 44,
+      "text": "Step 1 (same for both approaches): Server applies Alice's op first (it arrived first)\n\"abc\"  →  Insert 'X' at pos 1  →  \"a X b c\"   |   positions: 0=a   1=X   2=b   3=c",
+      "fontSize": 12, "fontFamily": 3,
+      "strokeColor": "#a6adc8", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 601, "version": 1, "versionNonce": 601,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Step 1 (same for both approaches): Server applies Alice's op first (it arrived first)\n\"abc\"  →  Insert 'X' at pos 1  →  \"a X b c\"   |   positions: 0=a   1=X   2=b   3=c",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "arrow-step1-to-left", "type": "arrow",
+      "x": 370, "y": 414, "width": 160, "height": 30,
+      "strokeColor": "#ff4444", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 80,
+      "seed": 700, "version": 1, "versionNonce": 700,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "points": [[160, 0], [0, 30]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "arrow-step1-to-right", "type": "arrow",
+      "x": 560, "y": 414, "width": 180, "height": 30,
+      "strokeColor": "#44cc88", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 80,
+      "seed": 701, "version": 1, "versionNonce": 701,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "points": [[0, 0], [180, 30]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+
+    {
+      "id": "wrong-header", "type": "rectangle",
+      "x": 30, "y": 448, "width": 490, "height": 30,
+      "strokeColor": "#882222", "backgroundColor": "#1a0606",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 800, "version": 1, "versionNonce": 800,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "wrong-header-text", "type": "text",
+      "x": 30, "y": 456, "width": 490, "height": 16,
+      "text": "❌  WITHOUT OT — Naive Approach",
+      "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#ff6666", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 801, "version": 1, "versionNonce": 801,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "❌  WITHOUT OT — Naive Approach",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "wrong-step2-rect", "type": "rectangle",
+      "x": 30, "y": 486, "width": 490, "height": 60,
+      "strokeColor": "#662222", "backgroundColor": "#120404",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 810, "version": 1, "versionNonce": 810,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "wrong-step2-text", "type": "text",
+      "x": 40, "y": 492, "width": 470, "height": 48,
+      "text": "Step 2: Apply Bob's ORIGINAL op (no transformation)\n\"aXbc\"  →  Insert 'Y' at pos 2  (Bob's original position)\npos 2 on \"aXbc\" = 'b'... wait, pos 2 = 'b' here.  So Y inserts before b.",
+      "fontSize": 11, "fontFamily": 3,
+      "strokeColor": "#cc6666", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 811, "version": 1, "versionNonce": 811,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Step 2: Apply Bob's ORIGINAL op (no transformation)\n\"aXbc\"  →  Insert 'Y' at pos 2  (Bob's original position)\npos 2 on \"aXbc\" = 'b'... wait, pos 2 = 'b' here.  So Y inserts before b.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "wrong-result-rect", "type": "rectangle",
+      "x": 30, "y": 554, "width": 490, "height": 90,
+      "strokeColor": "#ff3333", "backgroundColor": "#200808",
+      "fillStyle": "solid", "strokeWidth": 3, "roughness": 0, "opacity": 100,
+      "seed": 820, "version": 1, "versionNonce": 820,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "wrong-result-text", "type": "text",
+      "x": 40, "y": 560, "width": 470, "height": 78,
+      "text": "Result:  \"a  X  Y  b  c\"\n          0  1  2  3  4\n\n✗  Y landed between X and b\n   Bob wanted Y between b and c — INTENTION VIOLATED",
+      "fontSize": 13, "fontFamily": 3,
+      "strokeColor": "#ff5555", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 821, "version": 1, "versionNonce": 821,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Result:  \"a  X  Y  b  c\"\n          0  1  2  3  4\n\n✗  Y landed between X and b\n   Bob wanted Y between b and c — INTENTION VIOLATED",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "col-divider", "type": "line",
+      "x": 550, "y": 444, "width": 0, "height": 210,
+      "strokeColor": "#2a2a4a", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 60,
+      "seed": 850, "version": 1, "versionNonce": 850,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "points": [[0, 0], [0, 210]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": null,
+      "strokeStyle": "dashed"
+    },
+
+    {
+      "id": "correct-header", "type": "rectangle",
+      "x": 580, "y": 448, "width": 490, "height": 30,
+      "strokeColor": "#228844", "backgroundColor": "#061408",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 900, "version": 1, "versionNonce": 900,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "correct-header-text", "type": "text",
+      "x": 580, "y": 456, "width": 490, "height": 16,
+      "text": "✓  WITH OT — Transform First",
+      "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#44dd88", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 901, "version": 1, "versionNonce": 901,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "✓  WITH OT — Transform First",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "transform-rect", "type": "rectangle",
+      "x": 580, "y": 486, "width": 490, "height": 80,
+      "strokeColor": "#aa44ff", "backgroundColor": "#12082a",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 910, "version": 1, "versionNonce": 910,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "transform-label", "type": "text",
+      "x": 586, "y": 490, "width": 100, "height": 14,
+      "text": "🔄 TRANSFORM",
+      "fontSize": 11, "fontFamily": 1,
+      "strokeColor": "#cc88ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 911, "version": 1, "versionNonce": 911,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "🔄 TRANSFORM",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "transform-text", "type": "text",
+      "x": 590, "y": 506, "width": 474, "height": 56,
+      "text": "Bob's op: Insert('Y', pos=2) was written for original \"abc\"\nAlice inserted at pos 1  ≤  Bob's pos 2  →  shift Bob's pos by +1\nTransformed op: Insert('Y', pos=3)  on the new \"aXbc\"",
+      "fontSize": 12, "fontFamily": 3,
+      "strokeColor": "#cc88ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 912, "version": 1, "versionNonce": 912,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Bob's op: Insert('Y', pos=2) was written for original \"abc\"\nAlice inserted at pos 1  ≤  Bob's pos 2  →  shift Bob's pos by +1\nTransformed op: Insert('Y', pos=3)  on the new \"aXbc\"",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "correct-result-rect", "type": "rectangle",
+      "x": 580, "y": 574, "width": 490, "height": 70,
+      "strokeColor": "#44ff88", "backgroundColor": "#062012",
+      "fillStyle": "solid", "strokeWidth": 3, "roughness": 0, "opacity": 100,
+      "seed": 920, "version": 1, "versionNonce": 920,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "correct-result-text", "type": "text",
+      "x": 590, "y": 580, "width": 470, "height": 58,
+      "text": "\"aXbc\"  →  Insert 'Y' at pos 3  →  \"a  X  b  Y  c\"\n                                      0  1  2  3  4\n\n✓  Y landed between b and c  —  BOB'S INTENTION PRESERVED\n✓  X landed between a and b  —  ALICE'S INTENTION PRESERVED",
+      "fontSize": 12, "fontFamily": 3,
+      "strokeColor": "#44ff88", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 921, "version": 1, "versionNonce": 921,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "\"aXbc\"  →  Insert 'Y' at pos 3  →  \"a  X  b  Y  c\"\n                                      0  1  2  3  4\n\n✓  Y landed between b and c  —  BOB'S INTENTION PRESERVED\n✓  X landed between a and b  —  ALICE'S INTENTION PRESERVED",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "convergence-rect", "type": "rectangle",
+      "x": 100, "y": 662, "width": 900, "height": 68,
+      "strokeColor": "#4a9aff", "backgroundColor": "#060e1e",
+      "fillStyle": "solid", "strokeWidth": 2, "roughness": 0, "opacity": 100,
+      "seed": 1000, "version": 1, "versionNonce": 1000,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "convergence-title", "type": "text",
+      "x": 100, "y": 668, "width": 900, "height": 16,
+      "text": "🔁  CONVERGENCE — The Superpower of OT",
+      "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#74b9ff", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 1001, "version": 1, "versionNonce": 1001,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "🔁  CONVERGENCE — The Superpower of OT",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "convergence-text", "type": "text",
+      "x": 100, "y": 688, "width": 900, "height": 36,
+      "text": "Apply Alice first, then transformed Bob  →  \"aXbYc\"  ✓        Apply Bob first, then transformed Alice  →  \"aXbYc\"  ✓\nNo matter the order — every client reaches the same final state.  This is what OT guarantees.",
+      "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#a6adc8", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 1002, "version": 1, "versionNonce": 1002,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "Apply Alice first, then transformed Bob  →  \"aXbYc\"  ✓        Apply Bob first, then transformed Alice  →  \"aXbYc\"  ✓\nNo matter the order — every client reaches the same final state.  This is what OT guarantees.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "rule-rect", "type": "rectangle",
+      "x": 30, "y": 748, "width": 1060, "height": 110,
+      "strokeColor": "#5a5a9a", "backgroundColor": "#08081a",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "seed": 1100, "version": 1, "versionNonce": 1100,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "angle": 0, "groupIds": [],
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "rule-title", "type": "text",
+      "x": 30, "y": 755, "width": 1060, "height": 16,
+      "text": "The Transform Rule (Insert vs Insert)",
+      "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#9999cc", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 1101, "version": 1, "versionNonce": 1101,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "The Transform Rule (Insert vs Insert)",
+      "angle": 0, "groupIds": []
+    },
+    {
+      "id": "rule-body", "type": "text",
+      "x": 50, "y": 776, "width": 1020, "height": 76,
+      "text": "if  remote_insert_position  <  my_position   →   shift my position +1   (remote inserted before me, I move right)\nif  remote_insert_position  >  my_position   →   no shift             (remote inserted after me, no impact)\nif  remote_insert_position  =  my_position   →   tie-break by clientId (lower id wins, higher id shifts right)\n\nThink of it as: someone squeezed into the line before your spot → you step one tile to the right before you jump in.",
+      "fontSize": 12, "fontFamily": 3,
+      "strokeColor": "#a6adc8", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "left", "verticalAlign": "top",
+      "seed": 1102, "version": 1, "versionNonce": 1102,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "if  remote_insert_position  <  my_position   →   shift my position +1   (remote inserted before me, I move right)\nif  remote_insert_position  >  my_position   →   no shift             (remote inserted after me, no impact)\nif  remote_insert_position  =  my_position   →   tie-break by clientId (lower id wins, higher id shifts right)\n\nThink of it as: someone squeezed into the line before your spot → you step one tile to the right before you jump in.",
+      "angle": 0, "groupIds": []
+    },
+
+    {
+      "id": "footer", "type": "text",
+      "x": 30, "y": 868, "width": 1060, "height": 14,
+      "text": "P01 · Learn to Think Like an Architect  ·  Operational Transformation  ·  youtube.com/@CodeWithSunchitDudeja  ·  instagram.com/sunchitdudeja",
+      "fontSize": 10, "fontFamily": 1,
+      "strokeColor": "#44446a", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100,
+      "textAlign": "center", "verticalAlign": "top",
+      "seed": 1200, "version": 1, "versionNonce": 1200,
+      "isDeleted": false, "boundElements": null, "updated": 1,
+      "link": null, "locked": false, "containerId": null,
+      "originalText": "P01 · Learn to Think Like an Architect  ·  Operational Transformation  ·  youtube.com/@CodeWithSunchitDudeja  ·  instagram.com/sunchitdudeja",
+      "angle": 0, "groupIds": []
+    }
+
+  ],
+  "appState": {
+    "theme": "dark",
+    "viewBackgroundColor": "#000000",
+    "gridSize": null,
+    "zoom": { "value": 1 }
+  }
+}
