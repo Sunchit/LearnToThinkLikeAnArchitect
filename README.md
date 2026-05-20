@@ -66,7 +66,7 @@ Every problem is presented as an architect would encounter it — with a story, 
 | P01 | Designing Google Docs — The Complete System Design | HLD, scale estimation, OT engine, sharding, fault tolerance, trade-offs | [Read](./P01_Google_Docs_System_Design.md) |
 | P01b | Operational Transformation Deep Dive | OT algorithm, transformation rules, convergence proof, undo | [Read](./P01_Operational_Transformation_Google_Docs.md) |
 | P02 | Netflix Chaos Monkey | Chaos engineering, resilience testing, steady-state hypothesis | _coming soon_ |
-| P03 | Amazon Black Friday Connection Pool Meltdown | HikariCP, `(cores×2)+1`, PgBouncer, load testing | _coming soon_ |
+| P03 | Amazon Black Friday Connection Pool Meltdown | HikariCP, `(cores×2)+1`, PgBouncer, load testing | [Read](./P03_Amazon_Black_Friday_Connection_Pool_Meltdown.md) |
 | P04 | The Kafka OOM Crash That Charged 1000 Customers Twice | At-least-once delivery, idempotency, offset commits | _coming soon_ |
 | P05 | The Idempotency Key That Lied | Two-phase PENDING/COMPLETED, Redis SETNX flaw, partial failures | _coming soon_ |
 | P06 | One Request. A Thousand Logs. Zero Answers. | Distributed tracing, TraceId/SpanId, OpenTelemetry, Jaeger | _coming soon_ |
